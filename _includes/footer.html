@@ -1,0 +1,92 @@
+	<footer>
+ 		<div class="footer-inner"> 
+			<span style="font-size: 16px;">{{ site.title }}</span><br>
+ 			{% if site.footer_summary %}
+ 				{% if site.footer_summary_link %}
+ 					<span><a href="{{ site.footer_summary_link }}" title="{{ site.footer_summary }}" target="_blank">{{ site.footer_summary }}</a></span>
+ 				{% else %}
+ 					<span>{{ site.footer_summary }}</span>
+ 				{% endif %}
+ 				<br>
+ 			{% endif %}
+ 			{% if site.phone %}
+ 				<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Phone: {{ site.phone }}
+ 			{% endif %}
+ 			<br>
+ 			{% if site.email %}
+ 				<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email: {{ site.email }} 
+ 			{% endif %}
+		</div>
+ 		<div class="footer-outter"> © {{  site.time | date: "%Y" }} {{ site.title }}</div>
+	</footer>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/js/classie.js" | prepend: site.baseurl }}"></script>
+	{% if page.layout == 'homepage' %}
+    	<script src="{{ "/js/cbpAnimatedHeader.js" | prepend: site.baseurl }}"></script>
+    {% endif %}
+
+    {% if page.layout == 'contact' %}
+    <!-- Contact Form JavaScript -->
+    <script src="{{ "/js/jqBootstrapValidation.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/contact_me.js" | prepend: site.baseurl }}"></script>
+    {% endif %}
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-78703465-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	<script type="text/javascript">
+	if (typeof jQuery != 'undefined') {
+		jQuery(document).ready(function($) {
+			var filetypes = /\.(zip|exe|pdf|doc*|xls*|ppt*|mp3)$/i;
+			var baseHref = '';
+			if (jQuery('base').attr('href') != undefined)
+				baseHref = jQuery('base').attr('href');
+			jQuery('a').each(function() {
+				var href = jQuery(this).attr('href');
+				if (href && (href.match(/^https?\:/i)) && (!href.match(document.domain))) {
+					jQuery(this).click(function() {
+						var extLink = href.replace(/^https?\:\/\//i, '');
+						_gaq.push(['_trackEvent', 'External', 'Click', extLink]);
+						if (jQuery(this).attr('target') != undefined && jQuery(this).attr('target').toLowerCase() != '_blank') {
+							setTimeout(function() { location.href = href; }, 200);
+							return false;
+						}
+					});
+				}
+				else if (href && href.match(/^mailto\:/i)) {
+					jQuery(this).click(function() {
+						var mailLink = href.replace(/^mailto\:/i, '');
+						_gaq.push(['_trackEvent', 'Email', 'Click', mailLink]);
+					});
+				}
+				else if (href && href.match(/^#collapse/i)) {
+					jQuery(this).click(function() {
+						var faqLink = href..innerHTML;
+						_gaq.push(['_trackEvent', 'FAQ', 'Click', faqLink]);
+					});
+				}
+				else if (href && href.match(filetypes)) {
+					jQuery(this).click(function() {
+						var extension = (/[.]/.exec(href)) ? /[^.]+$/.exec(href) : undefined;
+						var filePath = href;
+						_gaq.push(['_trackEvent', 'Download', 'Click-' + extension, filePath]);
+						if (jQuery(this).attr('target') != undefined && jQuery(this).attr('target').toLowerCase() != '_blank') {
+							setTimeout(function() { location.href = baseHref + href; }, 200);
+							return false;
+						}
+					});
+				}
+			});
+		});
+	}
+	</script>
+	

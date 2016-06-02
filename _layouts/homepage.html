@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <div class="page_wrapper">
+
+        {% include nav.html %}
+
+        <header id="homepage-main">
+            <div class="container-fluid">
+              <div class="hp_intro-padding">
+                <div class="hp_intro-text panel panel-default col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                  <div class="hp_intro-lead-in panel-body">
+                  {{ page.site_slogan_1 }}<br>
+                  {{ page.site_slogan_2 }}
+                  </div> 
+                </div>
+              </div>
+            </div>
+        </header>
+        <div class="main_content container-fluid">
+            <div class="row overview">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                    <div class="text-center center-block">
+                    {{ content }}
+                    </div>
+
+                </div>
+            </div>
+
+            {% if page.treatable_list_title %}
+            <div class="row overview">
+
+                <h2 class="italic text-center">{{ page.treatable_list_title }}</h2>
+                <br />
+                <div class="col-lg-3 col-lg-offset-3 
+                            col-md-3 col-md-offset-3 
+                            col-sm-3 col-sm-offset-3
+                            col-xs-8 col-xs-offset-2">
+                    <ul>
+                    {% for condition in page.treatable_list_left %}
+                        <li>{{ condition.item }}</li>
+                    {% endfor %}
+                    </ul>
+                </div>
+                <div class="clearfix visible-xs-block"></div>
+
+                <div class="col-lg-3 col-lg-offset-0 
+                            col-md-3 col-md-offset-0
+                            col-sm-3 col-sm-offset-0
+                            col-xs-8 col-xs-offset-2">
+                    <ul>
+                    {% for condition in page.treatable_list_right %}
+                        <li>{{ condition.item }}</li>
+                    {% endfor %}
+                    </ul>
+                </div>
+            </div>
+             {% endif %}
+        </div>
+        
+
+    </div>
+    {% include footer.html %}
+
+  </body>
+
+</html>

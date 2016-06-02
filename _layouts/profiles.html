@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="row">
+	{{ content }}
+</div>
+
+<div class="clearfix"></div>
+{% for profile in page.profiles %}
+<div class="row">
+	<div class="text-center">
+		{% if profile.image %}
+	 	<img src="{{ "/images/"  | prepend: site.baseurl | append: profile.image }}" alt="{{ profile.name }}" class=" margin20 profile-img img-circle"> 
+		{% endif %}
+	 	<h3 class="text-center">{{ profile.name }}</h3> 
+	 	{% if profile.qual %}
+	 	<h4 class="text-center">{{ profile.qual }}</h4> 
+		{% endif %}
+	</div>       
+	{{ profile.bio }}
+</div>
+<div class="clearfix"></div>
+{% endfor %}

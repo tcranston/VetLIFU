@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<div class="row">
+	{{ content }}
+</div>
+
+<div class="clearfix"></div>
+<div class="row">
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		{% assign site_questions = site.questions | sort: 'weight' %}
+		{% for question in site_questions  %}
+		<!-- {% increment variable %} -->
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne">
+			  <h4 class="panel-title">
+			    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{ variable }}" aria-expanded="false" aria-controls="collapse{{ variable }}" class="collapsed">
+			      {{ question.title }} 
+			    </a>
+			  </h4>
+			</div>
+			<div id="collapse{{ variable }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{ variable }}" aria-expanded="false">
+			  <div class="panel-body">
+			     {{ question.content }}
+
+			     {% if question.files.size > 0 %}
+			    
+			     	 {% for file in question.files %}
+			     	  	<p>
+			     		<a href="/files/{{ file.filename}}">
+			     		<span class="glyphicon glyphicon-file" aria-hidden="true"></span> {{ file.name }} </a>
+			     		 </p>
+			      	{% endfor %}
+			    
+			     {% endif %}
+			  </div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+
+ 

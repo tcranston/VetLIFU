@@ -1,29 +1,35 @@
-# This is the default format.
-# For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:title
-# https://help.github.com/articles/migrating-your-pages-site-from-maruku
+# Site settings
+title: VET LIFU LTD
+email: info@vetlifu.com
+phone: 07866 143896
+description: Therapeutic ultrasound An effective treatment for muscle and joint conditions in dogs, cats and horses.
+keywords: Therapeutic, Ultrasound, Dogs, Cats, Horses, Muscle, Joint, Treatment
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+
+menu:
+  - title: Home
+    meta: VetLIFU Home Page
+    url: /
+  - title: FAQ
+    meta: Frequently asked questions
+    url: /faq
+  - title: Our Team
+    meta: Meet our team
+    url: /our_team
+  - title: Contact Us
+    meta: Contact the VetLIFU team
+    url: /contact_us
+
+
+
+# Footer
+footer_summary: In association with HAIFU Medical Technology Co. Ltd
+footer_summary_link: "http://www.haifumedical.com"
+
+
+collections:
+- questions
+
+# Build settings
 markdown: kramdown
-
-highlighter: pygments
-paginate: 20 # pagination based on number of posts
-paginate_path: "page/:num"
-
-# These paths are to the main pages Jekyll-Bootstrap ships with.
-# Some JB helpers refer to these paths; change them here if needed.
-#
-# categories_path : categories.html
-# tags_path : tags.html
-
-BASE_PATH : http://www.vetlifu.com/
-
-
-title : VetLIFU
-
-
-
-author:
-  name: Jonathan Cranston
-  role: Veterinary Low Intensity Focused Ultrasound
-  email: jmrcvs@gmail.com
-  bio: "Promoting healing of soft tissue damage in large and small animals."
-  uno-dbyll: uno-dbyll.png
