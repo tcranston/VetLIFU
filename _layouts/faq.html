@@ -14,7 +14,7 @@ layout: default
 		<div class="panel panel-default">
 			<div class="panel-heading" role="tab" id="headingOne">
 			  <h4 class="panel-title">
-			    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{ variable }}" aria-expanded="false" aria-controls="collapse{{ variable }}" class="collapsed">
+			    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{ variable }}" aria-expanded="false" aria-controls="collapse{{ variable }}" class="collapsed" onclick="ga('send', 'event', 'FAQ', 'Click', '{{ question.title }}', '0');">
 			      {{ question.title }} 
 			    </a>
 			  </h4>
@@ -27,7 +27,7 @@ layout: default
 			    
 			     	 {% for file in question.files %}
 			     	  	<p>
-			     		<a href="/files/{{ file.filename}}">
+			     		<a href="/files/{{ file.filename}}" onclick="ga('send', 'event', 'Download', 'Click', '{{ file.filename }}', '0');" target="_blank">
 			     		<span class="glyphicon glyphicon-file" aria-hidden="true"></span> {{ file.name }} </a>
 			     		 </p>
 			      	{% endfor %}
