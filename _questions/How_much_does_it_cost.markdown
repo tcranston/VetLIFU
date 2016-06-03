@@ -2,4 +2,4 @@
 title:  "How much does it cost?"
 weight: 980
 ---
-£40 for an initial consultation. Price is then dependent on the treatment regime required. 
+Price is dependant on the treatment regime required, but please contact us for further information.
