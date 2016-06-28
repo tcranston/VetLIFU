@@ -39,7 +39,7 @@ treatable_list_right:
 
 
 ## What is Low Intensity Focused Ultrasound?
-Low Intesity Focused Ultrasound (LIFU) is a new generation of therapeutic ultrasound. Therapeutic ultrasound has been recognized as an effective treatment for soft tissue injuries for many years. The benefits include decreasing pain and swelling, increasing blood flow to the affected area and gently breaking down scar tissue.
+Low Intesity Focused Ultrasound (LIFU) is a new generation of therapeutic ultrasound. Therapeutic ultrasound has been recognised as an effective treatment for soft tissue injuries for many years. The benefits include decreasing pain and swelling, increasing blood flow to the affected area and gently breaking down scar tissue.
 
 
 {::nomarkdown}  
