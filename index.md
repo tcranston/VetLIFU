@@ -39,7 +39,7 @@ treatable_list_right:
 
 
 ## What is Low Intensity Focused Ultrasound?
-Low Intesity Focused Ultrasound (LIFU) is a new generation of therapeutic ultrasound. Therapeutic ultrasound has been recognised as an effective treatment for soft tissue injuries for many years. The benefits include decreasing pain and swelling, increasing blood flow to the affected area and gently breaking down scar tissue.
+Low Intensity Focused Ultrasound (LIFU) is a new generation of therapeutic ultrasound. Therapeutic ultrasound has been recognised as an effective treatment for soft tissue injuries for many years. The benefits include decreasing pain and swelling, increasing blood flow to the affected area and gently breaking down scar tissue.
 
 
 {::nomarkdown}  
@@ -52,16 +52,16 @@ Low Intesity Focused Ultrasound (LIFU) is a new generation of therapeutic ultras
 {:/}  
 
 ## How does LIFU differ from conventional therapeutic ultrasound?
-LIFU is a revolutionary technology that emits low frequency, focused ultrasound waves. A lower frequency than conventional therapeutic ultrasound allows the ultrasound waves to penetrate deeper. Focussing the waves, in contrast to scattered waves emitted by conventional machines, allows for more precise treatment of a problem area. Focussing the waves also allows for therapeutic levels to be reached actually within a joint. Thus LIFU not only helps with pain and inflammation within a joint caused by conditions such as osteoarthritis, but also with the associated muscular compensations that accompany such conditions.
+LIFU is a revolutionary technology that emits low frequency, focused ultrasound waves. A lower frequency than conventional therapeutic ultrasound allows the ultrasound waves to penetrate deeper. Focusing the waves, in contrast to scattered waves emitted by conventional machines, allows for more precise treatment of a problem area. Focussing the waves also allows for therapeutic levels to be reached actually within a joint. Thus LIFU not only helps with pain and inflammation within a joint caused by conditions such as osteoarthritis, but also with the associated muscular compensations that accompany such conditions.
 
 {::nomarkdown}  
 <br />
 <br />
 {:/}  
 
-## Decidated to improving quality of life for your best friend.
+## Dedicated to improving quality of life for your best friend.
 
-This treatment has been pioneered by medical professionals and is now being brought into the veterinary field by verterinary professionals. A lot of research has gone into this technology and more is being done. So you can have peace of mind that your beloved companion is in safe hands.
+This treatment has been pioneered by medical professionals and is now being brought into the veterinary field by veterinary professionals. A lot of research has gone into this technology and more is being done. So you can have peace of mind that your beloved companion is in safe hands.
 
 {::nomarkdown}  
 <br />
